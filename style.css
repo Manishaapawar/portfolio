@@ -420,7 +420,6 @@ section {
 .skills-container {
     display: flex;
     flex-direction: column;
-    /* Stack bars vertically */
     align-items: center;
     gap: 15px;
     margin-top: 30px;
@@ -430,7 +429,7 @@ section {
 /* Skill Bar Container */
 
 .skill-bar {
-    width: 400px;
+    width: 50%;
     text-align: left;
 }
 
@@ -444,13 +443,9 @@ section {
     margin-bottom: 5px;
 }
 
-
-/* Progress Bar */
-
 .progress {
     width: 100%;
     height: 8px;
-    /* Sleek progress bar */
     background: #666;
     border-radius: 5px;
     overflow: hidden;
@@ -463,7 +458,8 @@ section {
 .progress span {
     display: block;
     height: 100%;
-    background: #ffcc00;
+    background: #00eaff;
+    /* Neon cyan/blue for better contrast */
     border-radius: 5px;
 }
 
