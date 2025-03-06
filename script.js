@@ -12,13 +12,15 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Responsive Menu Toggle
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navMenu = document.querySelector(".navbar"); // Corrected selector
+    // Mobile menu toggle
+    document.querySelector(".menu-icon").addEventListener("click", function() {
+        document.getElementById("mobileMenu").classList.toggle("active");
+    });
 
-    if (menuToggle && navMenu) { // Prevents errors if elements don't exist
-        menuToggle.addEventListener("click", function() {
-            navMenu.classList.toggle("active");
+    // Close mobile menu when clicking a link
+    document.querySelectorAll(".mobile-menu a").forEach(item => {
+        item.addEventListener("click", function() {
+            document.getElementById("mobileMenu").classList.remove("active");
         });
-    }
+    });
 });

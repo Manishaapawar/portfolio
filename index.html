@@ -13,80 +13,98 @@
 
 
 <!--header section code-->
+<!-- Header Section -->
 <header class="header">
-    <a href="#Home" class="logo">Manisha Pawar</a>
-    <i class="bx bx-menu" id="menu-icon"></i>
-    <nav class="navbar">
+    <div class="logo">Manisha Pawar</div>
+
+    <!-- Desktop Menu (Always Visible) -->
+    <nav class="desktop-menu">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact Me</a>
     </nav>
+
+    <!-- Mobile Menu Icon -->
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <!-- Mobile Menu (Hidden by Default) -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#education" onclick="closeMenu()">Education</a>
+        <a href="#contact" onclick="closeMenu()">Contact Me</a>
+    </nav>
 </header>
 
+
+
 <!-- Home Section -->
-<section class="home" id="home">
-    <div class="home-img">
-        <img src="Manisha.jpg" alt="portfolio img" />
-    </div>
+<section id="home" class="home-container">
     <div class="home-content">
-        <h3>Hi</h3>
-        <h1>
-            I'm <span>Manisha<br /></span>a Frontend Developer
-        </h1>
+        <h1>Hi, I'm Manisha</h1>
+        <h2>A Frontend Developer</h2>
         <p>
-            With a passion for creating beautiful, user-friendly web experiences. I love turning ideas into responsive and interactive websites using modern technologies.
+            With a passion for creating beautiful, user-friendly web experiences, I love turning ideas into responsive
+            and interactive websites using modern technologies. I specialize in building responsive websites,landing
+            pages, clones, and blogs using JavaScript,
+            React, CSS, and HTML.
         </p>
-        <div class="social-media">
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+        <!-- Social Media + Button -->
+        <div class="home-actions">
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Manishaapawar"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="cv.pdf" class="btn">Download CV</a>
         </div>
-        <a href="#" class="btn">Download CV</a>
     </div>
+
+    <!-- Image in a Rectangle -->
+    <div class="home-image">
+        <img src="Manisha.jpg" alt="Profile Image">
+    </div>
+</section>
+</div>
 </section>
 
 <!-- About Me Section -->
-<section id="about" class="about">
-    <div class="about-container">
-        <h2>About Me</h2>
-        <p>
-            Hi, I'm Manisha Pawar, a Frontend Developer with a passion for crafting visually stunning, high-performance websites. I thrive on turning concepts into seamless digital experiences that look great and feel intuitive.
-        </p>
+<section id="about" class="about-me">
+    <h2>About Me</h2>
+    <p>Hi, I'm Manisha Pawar, a Frontend Developer with a passion for crafting visually stunning, high-performance
+        websites. I thrive on turning concepts into seamless digital experiences that look great and feel intuitive.</p>
+    <p>I have completed my Bachelor's degree in Computer Engineering and have experience in building websites using
+        modern technologies like HTML, CSS, JavaScript, and React. I also have expertise in creating professional
+        websites using WordPress.</p>
+    <div class="skills-container">
+        <div class="skill-bar">
+            <label>HTML</label>
+            <div class="progress"><span style="width: 90%;"></span></div>
+        </div>
 
-        <!-- Skills Section -->
-        <h3>Skills</h3>
+        <div class="skill-bar">
+            <label>CSS</label>
+            <div class="progress"><span style="width: 85%;"></span></div>
+        </div>
 
-        <div class="skill-section">
-            <div class="skill">
-                <div class="skill-label">HTML</div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 80%;"></div>
-                </div>
-            </div>
+        <div class="skill-bar">
+            <label>JavaScript</label>
+            <div class="progress"><span style="width: 80%;"></span></div>
+        </div>
 
-            <div class="skill">
-                <div class="skill-label">CSS</div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 85%;"></div>
-                </div>
-            </div>
+        <div class="skill-bar">
+            <label>ReactJS</label>
+            <div class="progress"><span style="width: 75%;"></span></div>
+        </div>
 
-            <div class="skill">
-                <div class="skill-label">JavaScript</div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 80%;"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <div class="skill-label">ReactJS</div>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: 75%;"></div>
-                </div>
-            </div>
+        <div class="skill-bar">
+            <label>WordPress</label>
+            <div class="progress"><span style="width: 70%;"></span></div>
         </div>
     </div>
+</section>
 </section>
 
 <!-- Education Section -->
@@ -108,7 +126,7 @@
     </div>
 </section>
 </section>
-<section id=" contact " class=" contact-section ">
+<section id="contact" class=" contact-section ">
     <h2>Contact Me</h2>
     <p>Let's get in touch! Feel free to send me a message.</p>
 
