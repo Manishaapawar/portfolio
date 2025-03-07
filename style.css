@@ -12,7 +12,7 @@
 /* Import Google Fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Raleway:wght@400;500&display=swap");
- :root {
+.root {
     --bg-color: #fff;
     --snd-bg-color: #60817e;
     --text-color: #000;
@@ -143,6 +143,7 @@ span {
 .desktop-menu a:hover {
     background-color: white;
     color: #6bc56b;
+    border-bottom: 3px solid rgb(4, 4, 35);
     border-radius: 5px;
 }
 
@@ -227,29 +228,27 @@ span {
     text-align: left;
 }
 
-.home-content h1 {
-    font-size: 50px;
-    font-weight: 600;
-    color: #555;
-    font-family: "Montserrat", sans-serif;
-    /* Bold and stylish */
-}
-
-.home-content h2 {
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 1.2;
-    color: #222;
-    font-family: "Montserrat", sans-serif;
-    /* Stylish and professional */
+.home-content {
+    h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    .highlight-hi {
+        color: grey;
+        /* Change this to your preferred color */
+    }
+    .highlight-name {
+        color: #7bce4b;
+        /* Change this to your preferred color */
+    }
 }
 
 .home-content p {
     font-size: 18px;
     line-height: 1.6;
     margin: 15px 0 40px;
-    color: #444;
-    font-family: "Raleway", sans-serif;
+    color: gray;
+    text-align: justify;
     /* Smooth and modern */
 }
 
@@ -278,7 +277,7 @@ span {
 
 .btn {
     display: inline-block;
-    background-color: #ffcc00;
+    background-color: #FFD900;
     color: #3e0808;
     font-size: 16px;
     font-weight: bold;
@@ -378,8 +377,9 @@ span {
 /* Fix section spacing */
 
 section {
-    padding: 50px 10%;
-    min-height: 100vh;
+    padding-top: 80px;
+    /* Adjust based on your navbar height */
+    scroll-margin-top: 80px
 }
 
 
@@ -399,7 +399,7 @@ section {
 .about-me h2 {
     font-size: 36px;
     font-weight: bold;
-    color: #ffcc00;
+    color: #FFD900;
     /* Yellow accent */
     margin-bottom: 15px;
 }
@@ -458,7 +458,7 @@ section {
 .progress span {
     display: block;
     height: 100%;
-    background: #00eaff;
+    background: #FFD900;
     /* Neon cyan/blue for better contrast */
     border-radius: 5px;
 }
@@ -517,7 +517,7 @@ section {
 .education-item h3 {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #4caf50;
+    color: #FFD900;
     margin-bottom: 5px;
 }
 
@@ -538,7 +538,7 @@ section {
     font-size: 1.2rem;
     font-weight: bold;
     color: #222;
-    background: #ffd700;
+    background: #FFD900;
     padding: 5px 12px;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -559,7 +559,7 @@ html {
     /* Match homepage */
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    font-size: 24px;
     min-height: 100vh;
 }
 

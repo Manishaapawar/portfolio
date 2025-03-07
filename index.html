@@ -42,14 +42,14 @@
 <!-- Home Section -->
 <section id="home" class="home-container">
     <div class="home-content">
-        <h1>Hi, I'm Manisha</h1>
-        <h2>A Frontend Developer</h2>
-        <p>
-            With a passion for creating beautiful, user-friendly web experiences, I love turning ideas into responsive
-            and interactive websites using modern technologies. I specialize in building responsive websites,landing
-            pages, clones, and blogs using JavaScript,
-            React, CSS, and HTML.
-        </p>
+
+        <!-- Text Content -->
+        <h1>
+            <span class="highlight-hi">Hi,</span>
+            <span class="highlight-name">I'm Manisha</span>
+        </h1>
+        <p>A Frontend Developer passionate about crafting beautiful and user-friendly web experiences. I specialize in building responsive websites, landing pages, clones, and blogs using JavaScript, React, CSS, and HTML, transforming ideas into seamless,
+            interactive digital solutions. I am always eager to learn new technologies and improve my skills to create innovative and impactful web applications. </p>
 
         <!-- Social Media + Button -->
         <div class="home-actions">
@@ -58,86 +58,89 @@
                 <a href="https://github.com/Manishaapawar"><i class="fa-brands fa-github"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <a href="cv.pdf" class="btn">Download CV</a>
+            <a href=" cv.pdf " class="btn ">Download CV</a>
         </div>
     </div>
 
     <!-- Image in a Rectangle -->
-    <div class="home-image">
-        <img src="Manisha.jpg" alt="Profile Image">
+    <div class="home-image ">
+        <img src="Manisha.jpg " alt="Profile Image ">
     </div>
 </section>
 </div>
 </section>
 
 <!-- About Me Section -->
-<section id="about" class="about-me">
-    <h2>About Me</h2>
-    <p>Hi, I'm Manisha Pawar, a Frontend Developer with a passion for crafting visually stunning, high-performance
-        websites. I thrive on turning concepts into seamless digital experiences that look great and feel intuitive.</p>
-    <p>I have completed my Bachelor's degree in Computer Engineering and have experience in building websites using
-        modern technologies like HTML, CSS, JavaScript, and React. I also have expertise in creating professional
-        websites using WordPress.</p>
-    <div class="skills-container">
-        <div class="skill-bar">
+<section id="about" class="about-me ">
+    <h2>ABOUT ME</h2>
+    <p>I design and develop high-performance, visually striking websites that deliver seamless user experiences. By combining creativity with modern web technologies, I ensure every site is intuitive, responsive, and optimized for impact.</p>
+    <p>I hold a Bachelor's degree in Computer Engineering and have experience building websites using technologies like HTML, CSS, JavaScript, and React. Additionally, I specialize in creating professional websites with WordPress, ensuring both functionality
+        and design excellence.</p>
+    <div class="skills-container ">
+        <div class="skill-bar ">
             <label>HTML</label>
-            <div class="progress"><span style="width: 90%;"></span></div>
+            <div class="progress "><span style="width: 90%; "></span></div>
         </div>
 
-        <div class="skill-bar">
+        <div class="skill-bar ">
             <label>CSS</label>
-            <div class="progress"><span style="width: 85%;"></span></div>
+            <div class="progress "><span style="width: 85%; "></span></div>
         </div>
 
-        <div class="skill-bar">
+        <div class="skill-bar ">
             <label>JavaScript</label>
-            <div class="progress"><span style="width: 80%;"></span></div>
+            <div class="progress "><span style="width: 80%; "></span></div>
         </div>
 
-        <div class="skill-bar">
+        <div class="skill-bar ">
             <label>ReactJS</label>
-            <div class="progress"><span style="width: 75%;"></span></div>
+            <div class="progress "><span style="width: 75%; "></span></div>
         </div>
 
-        <div class="skill-bar">
+        <div class="skill-bar ">
             <label>WordPress</label>
-            <div class="progress"><span style="width: 70%;"></span></div>
+            <div class="progress "><span style="width: 70%; "></span></div>
         </div>
     </div>
 </section>
 </section>
 
 <!-- Education Section -->
-<section id="education" class="education-section">
-    <div class="education-container">
-        <h2 class="section-title">Education</h2>
+<section id="education" class="education-section ">
+    <div class="education-container ">
+        <h2 class="section-title ">Education</h2>
 
-        <div class="education-item">
-            <h3>Bachelor's in Computer Science</h3>
+        <div class="education-item ">
+            <h3>Bachelor's in Computer Engineering</h3>
             <p>Mumbai University</p>
-            <span class="education-detail">9 CGPA</span>
+            <span class="education-detail ">9 CGPA</span>
         </div>
 
-        <div class="education-item">
+        <div class="education-item ">
             <h3>Diploma</h3>
             <p>DY Patil Polytechnic</p>
-            <span class="education-detail">63%</span>
+            <span class="education-detail ">63%</span>
         </div>
     </div>
 </section>
 </section>
-<section id="contact" class=" contact-section ">
-    <h2>Contact Me</h2>
+<section id="contact" class="contact-section">
+    <h2>CONTACT ME</h2>
     <p>Let's get in touch! Feel free to send me a message.</p>
 
-    <form action=" # " class=" contact-form ">
-        <input type=" text " placeholder=" Your Name " required>
-        <input type=" email " placeholder=" Your Email " required>
-        <textarea placeholder=" Your Message " rows=" 5 " required></textarea>
-        <button type=" submit ">Send Message</button>
+    <form id="contactForm" class="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+        <p id="responseMessage"></p>
+
     </form>
 </section>
 
+<!-- Corrected EmailJS Script -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="contact.js"></script>
 
 
 
