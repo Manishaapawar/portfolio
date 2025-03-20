@@ -12,12 +12,19 @@
 /* Import Google Fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Raleway:wght@400;500&display=swap");
-.root {
+:root {
+    --bg-color: white; /* Dark background */
+    --snd-bg-color: #1e1e1e; /* Slightly lighter dark shade */
+    --text-color: #ffffff; /* White text */
+    --main-color: #FFD900; /* Yellow accent */
+}
+
+/*.root {
     --bg-color: #fff;
     --snd-bg-color: #60817e;
     --text-color: #000;
     --main-color: #3a5666;
-}
+}*/
 
 html {
     font-size: 62.5%;
@@ -62,12 +69,12 @@ section {
 }
 
 .logo:hover {
-    color: rgb(2, 4, 24);
+    color: snow;
     transform: scale(1.1);
 }
 
 span {
-    color: rgb(50, 16, 4);
+    color: rgb(84, 22, 184);
 }
 
 .navbar a {
@@ -142,7 +149,7 @@ span {
 
 .desktop-menu a:hover {
     background-color: white;
-    color: #6bc56b;
+    color: #011239;
     border-bottom: 3px solid rgb(4, 4, 35);
     border-radius: 5px;
 }
@@ -160,7 +167,7 @@ span {
 .mobile-menu {
     display: none;
     flex-direction: column;
-    background-color: #6bc56b;
+    background-color:#011239; 
     position: absolute;
     top: 60px;
     right: 0;
@@ -183,7 +190,7 @@ span {
 
 .mobile-menu a:hover {
     background-color: white;
-    color: #6bc56b;
+    color:#011239; 
     border-radius: 5px;
 }
 
@@ -238,7 +245,7 @@ span {
         /* Change this to your preferred color */
     }
     .highlight-name {
-        color: #7bce4b;
+        color: #011239;
         /* Change this to your preferred color */
     }
 }
@@ -360,7 +367,7 @@ span {
 /* Fix header and ensure no extra space */
 
 .header {
-    background-color: #83d171;
+    background-color:#011239;
     position: fixed;
     width: 100%;
     top: 0;
@@ -505,7 +512,7 @@ section {
     padding: 20px;
     margin: 15px auto;
     max-width: 600px;
-    border-left: 5px solid #4caf50;
+    border-left: 5px solid #011239;
     /* Green accent line */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -517,7 +524,7 @@ section {
 .education-item h3 {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #FFD900;
+    color:#011239 ;
     margin-bottom: 5px;
 }
 
@@ -600,7 +607,7 @@ html {
 /* Button */
 
 .contact-form button {
-    background: orange;
+    background: #FFD900;
     color: black;
     padding: 12px 20px;
     border: none;
@@ -612,5 +619,5 @@ html {
 }
 
 .contact-form button:hover {
-    background: darkorange;
+    background: #FFD900;
 }
